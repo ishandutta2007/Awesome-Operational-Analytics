@@ -4,10 +4,11 @@
 
 # ⚡ Awesome Operational Analytics 📊
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Tracked Repos](https://img.shields.io/badge/Open--Source%20Projects-15%20Active-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Operational-Analytics)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-blue.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **Curated list of production-grade SaaS products, enterprise observability suites, and top open-source GitHub engines for real-time operational analytics, telemetry intelligence, log inspection, and automated operations.**
 
@@ -24,6 +25,8 @@
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🏗️ Architectural Stack Recommendations](#-architectural-stack-recommendations)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [⚖️ Disclaimer & Licensing](#-disclaimer--licensing)
 
 ---
@@ -124,6 +127,25 @@ Contributions are warmly welcomed! To suggest a new tool or revise existing info
 3. 📝 Add or update entries in `README.md` maintaining alphabetical or tabular rank sorting.
 4. 💡 Ensure factual descriptions, official documentation links, exact pricing tiers, and correct badge URLs.
 5. 🚀 Submit a pull request with a descriptive summary of changes.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using **Awesome Operational Analytics**! 🚀
+
+If this curated repository saved you time, helped you benchmark tooling, or architected your real-time telemetry stack, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it on GitHub.
+- 🍴 **Fork and contribute** tools, benchmarks, and updates.
+- 📢 **Share** with your DevOps, SRE, and Data Engineering communities.
+- ☕ **Buy a coffee & sponsor**: Support ongoing research and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Operational-Analytics&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Operational-Analytics&type=date&legend=top-left)
 
 ---
 
