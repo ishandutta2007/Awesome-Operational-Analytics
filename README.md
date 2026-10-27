@@ -1,205 +1,144 @@
-# Awesome-Operational-Analytics
+<div align="center">
 
-## Top Operational Analytics Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Operational Analytics Banner" width="100%" />
 
+# ⚡ Awesome Operational Analytics 📊
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Repos](https://img.shields.io/badge/Open--Source%20Projects-15%20Active-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Operational-Analytics)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-blue.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+**Curated list of production-grade SaaS products, enterprise observability suites, and top open-source GitHub engines for real-time operational analytics, telemetry intelligence, log inspection, and automated operations.**
 
-*Focused on Real-Time Operations Intelligence, Log Analytics & Infrastructure Monitoring*  
+*Operational Analytics connects real-time telemetry (logs, metrics, APM traces) with core business operations, empowering DevOps, SREs, RevOps, and Data Engineering teams to detect anomalies, automate incident remediation, and optimize performance before it impacts users.*
 
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Operational Analytics**. These tools enable operations and engineering teams to analyze machine data, application logs, infrastructure metrics, and business KPIs in real time—detecting anomalies, diagnosing root causes, and optimizing operational performance across complex systems.
-
-
-
-**Examples** include Workday Operational Analytics, Splunk, Datadog, Tableau, Microsoft Power BI, Looker, Qlik Sense, Sisense, Domo, and ThoughtSpot (the category leaders).
-
-
-
-**Open-source emphasis**: Operational Analytics spans two distinct domains—**observability** (logs, metrics, traces) and **business intelligence** (dashboards, reporting). Open-source tooling is strongest in observability with mature platforms like **OpenObserve** (Splunk/Datadog alternative with 140x lower storage costs)  and **Grafana** (visualization and alerting). For BI-driven operational dashboards, **Apache Superset** and **Metabase** are the leading open-source options, though they require SQL fluency and infrastructure investment . Organizations seeking unified operational analytics across both domains must integrate multiple tools.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Workday Operational Analytics](https://www.workday.com/)**  
-
-  Built-in operational reporting and analytics within Workday's enterprise suite, providing real-time visibility into HR, finance, and project operations with pre-built dashboards and customizable reports.
-
-
-
-- **[Splunk](https://www.splunk.com/)**  
-
-  Industry-leading platform for machine data analytics, log management, and security operations; IT Service Intelligence (ITSI) 5.0 adds AI-powered service and KPI discovery, Event iQ for alert noise reduction, and CMDB enrichment .
-
-
-
-- **[Datadog](https://www.datadoghq.com/)**  
-
-  Cloud observability platform covering infrastructure monitoring, APM, log management, and network monitoring; Watchdog provides anomaly detection across applications and infrastructure.
-
-
-
-- **[Tableau](https://www.tableau.com/)**  
-
-  Visual analytics platform widely used for operational dashboards when connected to data warehouses or operational data sources; requires analyst resources for custom builds.
-
-
-
-- **[Microsoft Power BI](https://powerbi.microsoft.com/)**  
-
-  Microsoft's BI platform commonly used for operational reporting and dashboards; accessible entry point for teams already in the Microsoft ecosystem.
-
-
-
-- **[Looker](https://looker.com/)**  
-
-  Google Cloud BI platform built on LookML semantic modeling for governed, reusable metric definitions; strongest when standardized on BigQuery.
-
-
-
-- **[Qlik Sense](https://www.qlik.com/)**  
-
-  Associative analytics engine enabling exploration without predefined queries; well-suited for complex operational data relationships.
-
-
-
-- **[Sisense](https://www.sisense.com/)**  
-
-  BI and analytics platform with embedded analytics capabilities and fusion data model for combining disparate operational sources.
-
-
-
-- **[Domo](https://www.domo.com/)**  
-
-  Cloud BI platform with broad connector library and business-user-friendly dashboard creation for operational reporting.
-
-
-
-- **[ThoughtSpot](https://www.thoughtspot.com/)**  
-
-  Search-driven analytics platform with natural language querying and AI-powered insights for operational data exploration.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[OpenObserve](https://github.com/openobserve/openobserve)**  
-
-  Open-source observability platform (AGPL-3.0, Rust) positioned as a **Splunk/Datadog/Elasticsearch alternative**; consolidates logs, metrics, traces, RUM, and session replay in a single binary or HA cluster; achieves **~140x lower storage costs** than Elasticsearch via Parquet columnar format and S3-native architecture; supports SQL and PromQL, OpenTelemetry natively, and 18+ chart types; SOC 2 Type II, ISO 27001, GDPR compliant, HIPAA-ready with BAA . **The most compelling open-source replacement for Splunk/Datadog in operational analytics**—feature-complete open-source edition is production-ready.
-
-
-
-- **[Apache Superset](https://github.com/apache/superset)**  
-
-  Leading open-source BI and data visualization platform (Apache 2.0) with 40+ chart types, SQL Lab IDE, enterprise-grade RBAC (Admin/Alpha/Gamma/Public), row-level security, and native cloud warehouse support; maintained by Apache Software Foundation with active contributions from Airbnb, Lyft, and others . The most comprehensive Tableau/Looker-like open-source experience for operational dashboards, though it requires SQL fluency and heavier infrastructure (app server, metadata DB, Redis, Celery workers) .
-
-
-
-- **[Metabase](https://github.com/metabase/metabase)**  
-
-  Open-source BI tool (AGPL) designed for non-technical users with visual query builder and easy setup (one app plus a database); free AI SQL in OSS tier as of v59; the lightest self-hosting option and best fit for mixed teams where business users need self-service operational analytics; embedded white-labeling requires Pro plan .
-
-
-
-- **[Grafana](https://github.com/grafana/grafana)**  
-
-  Open-source observability platform (AGPL v3) optimized for time-series metrics and infrastructure monitoring; excellent for real-time operational KPI dashboards over Prometheus, InfluxDB, and Loki; the standard for infrastructure and application operational dashboards.
-
-
-
-- **[Redash](https://github.com/getredash/redash)**  
-
-  SQL-first dashboard tool for operational analytics; **development has slowed significantly**—four years without a release after v10.1.0 (2021), then three releases 2025–2026 under community maintenance; community forum moved to read-only; still functional for SQL-only, internal-only use cases but no longer recommended for new deployments given maintenance risk .
-
-
-
-- **[Evidence.dev](https://github.com/evidence-dev/evidence)**  
-
-  Code-first, analytics-as-code BI framework; dashboards written in Markdown with SQL queries, version-controlled in Git, rendered as static sites; ideal for developer-focused teams wanting Git-native operational reporting workflows.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Loki** — Grafana's log aggregation system (AGPL v3) designed for cost-effective log storage; indexes labels rather than full text, making it cheaper to operate than full-text indexed alternatives.
-
-- **Tempo** — Grafana's distributed tracing backend (AGPL v3) for storing and querying traces at scale; integrates natively with Grafana and OpenTelemetry.
-
-- **Lightdash** — Open-source BI purpose-built for dbt workflows; metrics defined in version-controlled dbt YAML for consistent operational definitions; SOC 2 compliant .
-
-- **DataEase** — Open-source BI tool (Chinese ecosystem) positioned as more user-friendly than Superset and Metabase for non-technical users; active domestic community .
-
-
-
-**Frameworks for building custom systems**: Combine **OpenObserve** for logs, metrics, and traces with Splunk-like query capabilities at dramatically lower cost, **Grafana** for real-time infrastructure dashboards and alerting, **Apache Superset** or **Metabase** for business-facing operational dashboards over warehouse data, and **Loki/Tempo** for cost-effective log and trace storage in a fully self-hosted operational analytics stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Operational analytics platforms handling infrastructure telemetry and business data must comply with applicable security policies and privacy regulations; logs and traces can reveal sensitive system architecture and user behavior.
-
-- Self-hosted open-source solutions vary significantly in scope—OpenObserve provides a complete observability platform rivaling Splunk/Datadog for logs/metrics/traces , while Superset and Metabase serve business-facing dashboards . Full operational analytics across both domains requires integrating observability and BI layers.
-
-- **Redash is not recommended for new deployments** due to maintenance risk—development has slowed to community maintenance with no active roadmap .
-
-- Verify license terms for commercial use; OpenObserve uses AGPL-3.0 , Superset uses Apache 2.0, Metabase uses AGPL with paid Pro/Enterprise tiers, and Grafana uses AGPL v3.
-
-
+</div>
 
 ---
 
+## 🧭 Table of Contents
 
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Architectural Stack Recommendations](#-architectural-stack-recommendations)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Licensing](#-disclaimer--licensing)
 
-**Made for SREs, operations analysts, DevOps engineers, and business intelligence teams.**  
+---
 
-Let's make operational analytics more open, real-time, and cost-effective.
+## 🌐 Sector Overview & Market Dynamics
+
+> The global operational analytics market is estimated at **$18.5 Billion in 2024–2025** and is projected to expand to **over $45 Billion by 2030** at a compound annual growth rate (CAGR) of **~16.8%**.  
+> The sector exhibits **moderate fragmentation with tier-1 market concentration**—hyperscale platforms (Microsoft Power BI, Splunk/Cisco, Datadog, Tableau/Salesforce) control disproportionate enterprise market share, while emerging modern data-stack players and high-efficiency open-source alternatives (OpenObserve, SigNoz, Superset) are rapidly capturing high-volume, cost-conscious data teams.
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+The following table benchmarks category-leading commercial and cloud-hosted operational analytics suites, ordered by enterprise scale (**Revenue / Market Valuation, descending**):
+
+| Product | Company Scale (Revenue / Valuation) | Starting Pricing (Paid Tiers) | Free Tier / Free Trial Limits | Key Operational Focus |
+|:---|:---|:---|:---|:---|
+| **[Microsoft Power BI](https://powerbi.microsoft.com/)** | **~$3.0+ Trillion Market Cap** *(Microsoft parent; Power BI estimated $4B–$5B+ ARR)* | **$10.00 / user / month** (Power BI Pro); **$20.00 / user / month** (Power BI Premium per user) | **Free Forever plan** (Power BI Desktop: build reports locally; 1 GB per-user storage workspace for personal publishing) | Enterprise operational dashboards, broad Microsoft 365 / Fabric integration, live Power Query telemetry |
+| **[Tableau](https://www.tableau.com/)** | **~$280 Billion Market Cap** *(Salesforce parent; Tableau division ~$2.5B+ ARR)* | **$75.00 / user / month** (Tableau Creator, billed annually); Viewer from $15.00 / user / month | **14-Day Free Trial** (Full Creator feature access); **Tableau Public** (Free forever for public workbooks up to 10 GB) | Rich visual operational analytics, relational and warehouse query performance, enterprise self-service BI |
+| **[Looker](https://looker.com/)** | **~$2.1+ Trillion Market Cap** *(Alphabet parent; Google Cloud BI division ~$800M+ ARR)* | **$5,000.00 / platform / month** (Looker Standard Platform base fee + per-user license tiers) | **30-Day Free Trial** (via Google Cloud Platform credit trial with $300 in credits) | LookML semantic modeling, single source of governed truth, real-time SQL execution directly on BigQuery/Snowflake |
+| **[Splunk](https://www.splunk.com/)** | **$28 Billion Valuation** *(Acquired by Cisco; ~$4.2B ARR)* | **$150.00 / GB / month** (Splunk Enterprise Workload units / log ingest starting packages) | **60-Day Free Trial** (Splunk Enterprise with full enterprise features indexed up to 500 MB/day; converts to Free forever 500 MB/day license) | Machine data analytics, automated root-cause detection, security information and event management (SIEM), ITSI |
+| **[Workday Operational Analytics](https://www.workday.com/)** | **~$65 Billion Market Cap** *(~$7.3B ARR)* | **$100.00 / employee / year** (Starting Workday core module add-on; enterprise contracts typically start at $50,000/yr) | **30-Day Guided Enterprise Sandbox Trial** (Enterprise demo tenant with simulated organizational and operational data) | Unified HR, financial ledger, and operational process analytics; native ERP workflow triggers |
+| **[Datadog](https://www.datadoghq.com/)** | **~$40 Billion Market Cap** *(~$2.6B ARR)* | **$15.00 / host / month** (Pro Infrastructure tier); APM starts at **$31.00 / host / month** | **14-Day Free Trial** (Unlimited hosts, metrics, APM, log indexing, and synthetic monitoring during trial period) | Full-stack cloud observability, infrastructure monitoring, Watchdog AI automated anomaly diagnosis, OpenTelemetry pipelines |
+| **[Qlik Sense](https://www.qlik.com/)** | **~$10 Billion Valuation** *(Thoma Bravo portfolio; ~$1.1B ARR)* | **$20.00 / user / month** (Standard Cloud tier, minimum 10 users = $200/mo) | **30-Day Free Trial** (Qlik Cloud Business trial with up to 5 users and full associative engine exploration) | Associative calculation engine, in-memory cross-data-source exploration, automated operational alerting |
+| **[Sisense](https://www.sisense.com/)** | **~$1.5 Billion Valuation** *(Private; ~$160M ARR)* | **$10,000.00 / year** (Starting baseline deployment for Sisense Cloud / Embedded analytics packages) | **30-Day Free Trial** (Full access to Sisense Fusion analytical modeling suite with sample datasets) | Embedded analytics, Fusion Data Server for cross-database aggregation, low-code operational dashboards |
+| **[Domo](https://www.domo.com/)** | **~$350 Million Market Cap** *(~$320M ARR)* | **$300.00 / month** (Starting standard consumption tier covering up to 3 users and core cloud connectors) | **30-Day Free Trial** (Full platform functionality with access to 1,000+ pre-built cloud connectors) | High-speed cloud executive dashboards, drag-and-drop Magic ETL, real-time alert triggers for operational teams |
+| **[ThoughtSpot](https://www.thoughtspot.com/)** | **~$4.5 Billion Valuation** *(Private; ~$180M ARR)* | **$1,250.00 / month** (ThoughtSpot Team Edition package); Embedded edition custom tier | **30-Day Free Trial** (Full cloud trial connecting directly to cloud data warehouses with up to 5 users) | Search-driven natural language analytics, ThoughtSpot Sage AI copilot, automated metric variance drivers |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+The following table lists top open-source repositories powering modern operational analytics, observability, and dashboarding, sorted by **GitHub Stars (descending)**:
+
+| Project | GitHub Stars (Live Badge) | Primary License | Architecture & Key Capabilities |
+|:---|:---:|:---:|:---|
+| **[Grafana](https://github.com/grafana/grafana)** | [![GitHub stars](https://img.shields.io/github/stars/grafana/grafana?style=social&color=white)](https://github.com/grafana/grafana/stargazers) | AGPL-3.0 | The de facto open-source operational visualization standard; powers live dashboards across Prometheus, OpenTelemetry, Loki, PostgreSQL, and InfluxDB with rich alerting rules. |
+| **[Apache Superset](https://github.com/apache/superset)** | [![GitHub stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Apache-2.0 | Enterprise-scale BI platform offering 40+ dynamic visualization charts, SQL Lab IDE, granular row-level security (RLS), and native integration with Trino, ClickHouse, Snowflake, and BigQuery. |
+| **[Metabase](https://github.com/metabase/metabase)** | [![GitHub stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | AGPL-3.0 | Fast-setup, user-friendly operational business intelligence; provides visual no-code query builders, auto-generated exploration dashboards, pulse alerts, and embedded analytics. |
+| **[SigNoz](https://github.com/signoz/signoz)** | [![GitHub stars](https://img.shields.io/github/stars/signoz/signoz?style=social&color=white)](https://github.com/signoz/signoz/stargazers) | Apache-2.0 | Open-source alternative to Datadog built natively on OpenTelemetry and ClickHouse; combines metrics, distributed tracing, and log management in a single responsive UI. |
+| **[Grafana Loki](https://github.com/grafana/loki)** | [![GitHub stars](https://img.shields.io/github/stars/grafana/loki?style=social&color=white)](https://github.com/grafana/loki/stargazers) | AGPL-3.0 | Horizontally scalable, multi-tenant log aggregation system inspired by Prometheus; indexes metadata labels rather than full text to minimize storage and operational overhead. |
+| **[Redash](https://github.com/getredash/redash)** | [![GitHub stars](https://img.shields.io/github/stars/getredash/redash?style=social&color=white)](https://github.com/getredash/redash/stargazers) | BSD-2-Clause | Lightweight, developer-focused SQL query interface and operational dashboard builder; connects natively with dozens of relational, NoSQL, and time-series data engines. |
+| **[DataEase](https://github.com/dataease/dataease)** | [![GitHub stars](https://img.shields.io/github/stars/dataease/dataease?style=social&color=white)](https://github.com/dataease/dataease/stargazers) | GPL-3.0 | Open-source data visualization and operational analysis tool with drag-and-drop report layout, extensive template library, and cross-database query aggregation. |
+| **[OpenObserve](https://github.com/openobserve/openobserve)** | [![GitHub stars](https://img.shields.io/github/stars/openobserve/openobserve?style=social&color=white)](https://github.com/openobserve/openobserve/stargazers) | AGPL-3.0 | High-performance Rust-based observability engine replacing Splunk and Datadog; delivers **~140x lower storage costs** via Apache Arrow/Parquet on object storage (S3/GCS/MinIO) for logs, metrics, and traces. |
+| **[Cube](https://github.com/cube-js/cube)** | [![GitHub stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) | Apache-2.0 | Universal semantic layer and caching engine for operational analytics; provides consistent metric definitions, pre-aggregations, access control, and REST/GraphQL/SQL APIs. |
+| **[HyperDX](https://github.com/hyperdxio/hyperdx)** | [![GitHub stars](https://img.shields.io/github/stars/hyperdxio/hyperdx?style=social&color=white)](https://github.com/hyperdxio/hyperdx/stargazers) | MIT | Developer-first observability platform centralizing logs, session replays, traces, and metrics; correlates browser console logs and DOM sessions directly with backend microservice failures. |
+| **[Evidence](https://github.com/evidence-dev/evidence)** | [![GitHub stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) | MIT | Code-first, analytics-as-code BI framework; compiles Markdown and SQL into interactive, lightning-fast static data reports, version-controlled with Git. |
+| **[Lightdash](https://github.com/lightdash/lightdash)** | [![GitHub stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) | MIT | Modern open-source BI tool built natively around dbt; turns dbt models and semantic YAML definitions into interactive self-service operational dashboards. |
+| **[Grafana Tempo](https://github.com/grafana/tempo)** | [![GitHub stars](https://img.shields.io/github/stars/grafana/tempo?style=social&color=white)](https://github.com/grafana/tempo?style=social&color=white) | AGPL-3.0 | Massively scalable, easy-to-operate distributed tracing backend; requires only object storage to operate and integrates with Jaeger, Zipkin, OpenTelemetry, and Grafana. |
+| **[Siglens](https://github.com/siglens/siglens)** | [![GitHub stars](https://img.shields.io/github/stars/siglens/siglens?style=social&color=white)](https://github.com/siglens/siglens/stargazers) | Apache-2.0 | Micro-index log management and operational telemetry search engine; reduces compute footprint and storage consumption by up to 90% compared to legacy Elasticsearch clusters. |
+| **[Uptrace](https://github.com/uptrace/uptrace)** | [![GitHub stars](https://img.shields.io/github/stars/uptrace/uptrace?style=social&color=white)](https://github.com/uptrace/uptrace/stargazers) | BSD-2-Clause | Open-source APM tool driven by OpenTelemetry and ClickHouse; monitors system health, tracks distributed transactions, and pinpoints distributed system latency regressions. |
+
+---
+
+## 🏗️ Architectural Stack Recommendations
+
+When architecting a high-throughput, cost-efficient operational analytics platform, teams typically combine telemetry ingestion with analytical semantic layers:
+
+```
+┌────────────────────────────────────────────────────────┐
+│           Telemetry & Data Sources                     │
+│  Applications • Kubernetes • Databases • Cloud APIs   │
+└──────────────────────────┬─────────────────────────────┘
+                           │ (OpenTelemetry / FluentBit)
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│         High-Efficiency Telemetry Ingestion            │
+│      OpenObserve (Logs/Traces) • SigNoz • Loki         │
+│         Parquet / ClickHouse / S3 Storage Tier         │
+└──────────────────────────┬─────────────────────────────┘
+                           │ (SQL / PromQL / Semantic API)
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│         Governance & Semantic Modeling Layer           │
+│              Cube.js  •  dbt  •  LookML                │
+└──────────────────────────┬─────────────────────────────┘
+                           │
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│       Real-Time Operational Dashboards & Alerts        │
+│       Grafana (SRE/DevOps) • Metabase / Superset (BI)  │
+└────────────────────────────────────────────────────────┘
+```
+
+1. **High-Volume Telemetry & Log Ingestion**: Use **OpenObserve** or **SigNoz** to reduce log storage costs by up to 140x compared to legacy Elastic/Splunk clusters.
+2. **Infrastructure & Incident Response**: Deploy **Grafana** paired with Prometheus and Loki for real-time alerts, SLA monitoring, and node-level drilldowns.
+3. **Business & Operational Intelligence**: Use **Apache Superset** for complex SQL queries across warehouses (ClickHouse, Snowflake), or **Metabase** for non-technical team member self-service.
+4. **Governed Metrics**: Deploy **Cube** or **Lightdash** to lock down mission-critical metric definitions in version control.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! To suggest a new tool or revise existing information:
+
+1. 🍴 **Fork** this repository.
+2. 🌿 Create a feature branch: `git checkout -b feature/add-tool-name`
+3. 📝 Add or update entries in `README.md` maintaining alphabetical or tabular rank sorting.
+4. 💡 Ensure factual descriptions, official documentation links, exact pricing tiers, and correct badge URLs.
+5. 🚀 Submit a pull request with a descriptive summary of changes.
+
+---
+
+## ⚖️ Disclaimer & Licensing
+
+- **Community-Curated**: This list is assembled for educational and technical reference purposes. Product names and logos are trademarks of their respective owners.
+- **Data Security Notice**: Operational telemetry often processes sensitive machine data, authentication tokens, and user metadata. Always apply field-level masking, RBAC, and encryption before routing production logs.
+- **Licensing Compliance**: Always review open-source repository licenses (AGPL-3.0, Apache-2.0, MIT, GPL-3.0) for compliance with your organization's deployment guidelines.
+
+---
+
+<div align="center">
+
+**[⭐ Star this repository](https://github.com/ishandutta2007/Awesome-Operational-Analytics/stargazers) if you found it valuable!**
+
+*Maintained with ❤️ for SREs, Data Engineers, DevOps Specialists, and Operations Leaders.*
+
+</div>
